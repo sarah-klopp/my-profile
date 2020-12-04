@@ -1,0 +1,161 @@
+/*Colors and fonts*/
+
+body {
+
+	background-color:rgb(230,230,230);
+	color: rgb(50,50,50);
+	font-family: 'Helvetica', serif;
+	font-size: 17px;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: #FF928B;
+	font-size: 32px;
+	font-weight: 900;
+}
+
+h2 {
+	color:#FF928B;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h3{
+	color:rgb(90,90,90);
+	font-size: 18px;
+	font-weight:300;
+}
+
+p {
+	color: rgb(100,100,100);
+	font-size: 16px;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #E76B74;
+	font-weight:600;
+	font-size: 16px;
+}
+
+a:hover {
+	color:rgb(10;10;10);
+}
+
+/*Custom Design with class*/
+
+.container {
+	width: 700px;
+	margin: 40px auto;
+	padding-top: 50px;
+}
+
+@media (max-width: 760px){
+	.container {
+		width: 600px;
+	}
+}
+
+@media (max-width: 500px){
+	.container {
+		width: 400px;
+	}
+}
+
+.card-white {
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius: 4px;
+	margin :20px 0px;
+	text-align: center;
+}
+
+.img-circle {
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	margin-top: -140px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn-blue {
+	background-color: #FF928B;
+	color:white;
+	padding: 15px 20px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.btn-blue:hover {
+	background-color: black;
+	color:white;
+}
+
+.list-inline {
+	list-style: none;
+	padding-left: 0;
+}
+
+.list-inline li {
+	display: inline;
+	padding: 10px;
+}
+
+.list-inline i {
+	font-size: 50px;
+	color: #424874;
+}
+
+.list-inline i:hover{
+	color: black;
+}
+
+/* Design adjustments*/
+
+.introduction p {
+	margin-bottom:40px;
+}
+
+
+
+/* Columns */
+
+.columns {
+	display: flex;
+}
+
+.column {
+	text-align: center;
+	width: 50%;
+	min-width: 150px;
+	display: inline-block;
+}
+
+.progress {
+	padding: 20px 10px;
+	color:#424874;
+}
+
+.progress progress {
+	/* Reset the default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 15px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color:rgb(230,230,230);
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #424874;
+}
